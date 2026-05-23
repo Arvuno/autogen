@@ -28,6 +28,9 @@
 
 AutoGen requires **Python 3.10 or later**.
 
+> [!TIP]
+> It is recommended to use a virtual environment (e.g., `python -m venv venv && source venv/bin/activate`) to avoid conflicts with other packages.
+
 ```bash
 # Install AgentChat and OpenAI client from Extensions
 pip install -U "autogen-agentchat" "autogen-ext[openai]"
