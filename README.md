@@ -1,3 +1,20 @@
+
+
+## Quick Start
+
+Install with:
+```bash
+pip install autogen
+```
+
+Or clone and run:
+```bash
+git clone https://github.com/microsoft/autogen.git
+cd autogen
+python setup.py install
+```
+
+# autogen
 <a name="readme-top"></a>
 
 <div align="center">
