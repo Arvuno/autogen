@@ -13,6 +13,22 @@
 
 # AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework)
 
+
+## Quick Start
+
+Install with:
+```bash
+pip install autogen
+```
+
+Or clone and run:
+```bash
+git clone https://github.com/microsoft/autogen.git
+cd autogen
+python setup.py install
+```
+
+
 **AutoGen** is a framework for creating multi-agent AI applications that can act autonomously or work alongside humans.
 
 > [!CAUTION]
