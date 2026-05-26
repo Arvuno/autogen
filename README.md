@@ -239,3 +239,6 @@ or trademarks, whether by implication, estoppel, or otherwise.
     ↑ Back to Top ↑
   </a>
 </p>
+
+## Contributing
+PRs welcome!
