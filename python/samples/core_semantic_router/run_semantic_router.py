@@ -1,6 +1,6 @@
 """
 This example showcases using a Semantic Router
-to dynamically route user messages to the most appropraite agent
+to dynamically route user messages to the most appropriate agent
 for a conversation.
 
 The Semantic Router Agent is responsible for receiving messages from the user,

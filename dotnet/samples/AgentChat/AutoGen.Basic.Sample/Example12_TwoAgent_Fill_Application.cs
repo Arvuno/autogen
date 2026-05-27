@@ -158,7 +158,7 @@ public partial class TwoAgent_Fill_Application
             workflow: workflow);
 
         var groupChatManager = new GroupChatManager(groupChat);
-        var initialMessage = await assistantAgent.SendAsync("Generate a greeting meesage for user and start the conversation by asking what's their name.");
+        var initialMessage = await assistantAgent.SendAsync("Generate a greeting message for user and start the conversation by asking what's their name.");
 
         var chatHistory = new List<IMessage> { initialMessage };
         await foreach (var msg in userAgent.SendAsync(groupChatManager, chatHistory, maxRound: 30))

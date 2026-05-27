@@ -96,7 +96,7 @@ Use the following format to install pip package:
 
 If your code is incorrect, Fix the error and send the code again.
 
-Here's some externel information
+Here's some external information
 - The link to mlnet repo is: https://github.com/dotnet/machinelearning. you don't need a token to use github pr api. Make sure to include a User-Agent header, otherwise github will reject it.
 ")
             .RegisterMessageConnector()

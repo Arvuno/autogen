@@ -119,7 +119,7 @@ async def test_llama_cpp_create_structured_output(
         assert AgentResponse.model_validate_json(result.content).content == "Test content"
 
 
-# Commmented out due to raising not implemented error will leave in case streaming is supported in the future.
+# Commented out due to raising not implemented error will leave in case streaming is supported in the future.
 # @pytest.mark.asyncio
 # async def test_llama_cpp_create_stream(
 #     get_completion_client: "ContextManager[type[LlamaCppChatCompletionClient]]",
@@ -210,7 +210,7 @@ async def test_llama_cpp_integration_non_streaming_structured_output() -> None:
     assert AgentResponse.model_validate_json(result.content)
 
 
-# Commmented out due to raising not implemented error will leave in case streaming is supported in the future.
+# Commented out due to raising not implemented error will leave in case streaming is supported in the future.
 # @pytest.mark.asyncio
 # async def test_llama_cpp_integration_streaming() -> None:
 #     if not ((hasattr(torch.backends, "mps") and torch.backends.mps.is_available()) or torch.cuda.is_available()):

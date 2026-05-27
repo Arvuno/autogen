@@ -33,10 +33,10 @@ public static class MessageExtension
         var sb = new StringBuilder();
         // write from
         sb.AppendLine($"TextMessage from {message.From}");
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
         sb.AppendLine(message.Content);
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         return sb.ToString();
@@ -47,10 +47,10 @@ public static class MessageExtension
         var sb = new StringBuilder();
         // write from
         sb.AppendLine($"ImageMessage from {message.From}");
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
         sb.AppendLine($"Image: {message.Url}");
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         return sb.ToString();
@@ -62,7 +62,7 @@ public static class MessageExtension
         // write from
         sb.AppendLine($"ToolCallMessage from {message.From}");
 
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         foreach (var toolCall in message.ToolCalls)
@@ -81,7 +81,7 @@ public static class MessageExtension
         // write from
         sb.AppendLine($"ToolCallResultMessage from {message.From}");
 
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         foreach (var toolCall in message.ToolCalls)
@@ -100,7 +100,7 @@ public static class MessageExtension
         // write from
         sb.AppendLine($"AggregateMessage from {message.From}");
 
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         sb.AppendLine("ToolCallMessage:");
@@ -120,7 +120,7 @@ public static class MessageExtension
         var sb = new StringBuilder();
         // write from
         sb.AppendLine($"Message from {message.From}");
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         // write content
@@ -143,7 +143,7 @@ public static class MessageExtension
             }
         }
 
-        // write a seperator
+        // write a separator
         sb.AppendLine(separator);
 
         return sb.ToString();

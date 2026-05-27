@@ -104,7 +104,7 @@ class MultimodalWebSurfer(BaseChatAgent, Component[MultimodalWebSurferConfig]):
         1) If this is the first call, the browser is initialized and the page is loaded. This is done in :meth:`_lazy_init`. The browser is only closed when :meth:`close` is called.
         2) The method :meth:`_generate_reply` is called, which then creates the final response as below.
         3) The agent takes a screenshot of the page, extracts the interactive elements, and prepares a set-of-mark screenshot with bounding boxes around the interactive elements.
-        4) The agent makes a call to the :attr:`model_client` with the SOM screenshot, history of messages, and the list of available tools.
+        4) The agent makes a call to the :attr:`model_client` with the SOME screenshot, history of messages, and the list of available tools.
             - If the model returns a string, the agent returns the string as the final response.
             - If the model returns a list of tool calls, the agent executes the tool calls with :meth:`_execute_tool` using :attr:`_playwright_controller`.
             - The agent returns a final response which includes a screenshot of the page, page metadata, description of the action taken and the inner text of the webpage.

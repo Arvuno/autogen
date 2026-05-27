@@ -156,7 +156,7 @@ public partial class GPTAgentTest
     }
 
     /// <summary>
-    /// return the label name with hightest inference cost
+    /// return the label name with highest inference cost
     /// </summary>
     /// <param name="labelName"></param>
     /// <returns></returns>

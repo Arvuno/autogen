@@ -17,7 +17,7 @@ def main() -> None:
     if "messages" not in st.session_state:
         st.session_state["messages"] = []
 
-    # displying chat history messages
+    # displaying chat history messages
     for message in st.session_state["messages"]:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])

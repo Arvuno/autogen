@@ -13,7 +13,7 @@ namespace AutoGen.AzureAIInference.Extension;
 public static class FunctionContractExtension
 {
     /// <summary>
-    /// Convert a <see cref="FunctionContract"/> to a <see cref="FunctionDefinition"/> that can be used in gpt funciton call.
+    /// Convert a <see cref="FunctionContract"/> to a <see cref="FunctionDefinition"/> that can be used in gpt function call.
     /// </summary>
     /// <param name="functionContract">function contract</param>
     /// <returns><see cref="FunctionDefinition"/></returns>

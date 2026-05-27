@@ -41,7 +41,7 @@ public struct AgentName
     * Mn - nonspacing marks
     * Mc - spacing combining marks*
     * Nd - decimal numbers
-    * Pc - connector punctuations
+    * Pc - connector punctuation
 
     Of these, most are captured by "word characters" in .NET, \w, only needing \p{Nl} and \p{Mc} to be added.
     While Copilot /thinks/ that \p{Pc} is needed, it is not, as it is part of \w in .NET.

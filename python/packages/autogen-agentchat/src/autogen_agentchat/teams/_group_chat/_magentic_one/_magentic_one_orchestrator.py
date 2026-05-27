@@ -98,7 +98,7 @@ class MagenticOneOrchestrator(BaseGroupChatManager):
         self._n_rounds = 0
         self._n_stalls = 0
 
-        # Produce a team description. Each agent sould appear on a single line.
+        # Produce a team description. Each agent could appear on a single line.
         self._team_description = ""
         for topic_type, description in zip(self._participant_names, self._participant_descriptions, strict=True):
             self._team_description += re.sub(r"\s+", " ", f"{topic_type}: {description}").strip() + "\n"

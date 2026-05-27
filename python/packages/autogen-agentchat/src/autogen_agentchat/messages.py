@@ -394,13 +394,13 @@ class MultiModalMessage(BaseChatMessage):
                     text += f" {c.to_base64()}"
         return text
 
-    def to_text(self, iterm: bool = False) -> str:
+    def to_text(self, item: bool = False) -> str:
         result: List[str] = []
         for c in self.content:
             if isinstance(c, str):
                 result.append(c)
             else:
-                if iterm:
+                if item:
                     # iTerm2 image rendering protocol: https://iterm2.com/documentation-images.html
                     image_data = c.to_base64()
                     result.append(f"\033]1337;File=inline=1:{image_data}\a\n")

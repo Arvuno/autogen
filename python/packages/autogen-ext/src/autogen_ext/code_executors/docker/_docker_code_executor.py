@@ -47,7 +47,7 @@ try:
     from docker.models.containers import Container
 except ImportError as e:
     raise RuntimeError(
-        "Missing dependecies for DockerCommandLineCodeExecutor. Please ensure the autogen-ext package was installed with the 'docker' extra."
+        "Missing dependencies for DockerCommandLineCodeExecutor. Please ensure the autogen-ext package was installed with the 'docker' extra."
     ) from e
 
 

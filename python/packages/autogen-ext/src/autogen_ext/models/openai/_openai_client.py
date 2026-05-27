@@ -593,7 +593,7 @@ class BaseOpenAIChatCompletionClient(ChatCompletionClient):
                         _first_system_message_idx = idx
                     elif _last_system_message_idx + 1 != idx:
                         # That case, system message is not continuous
-                        # Merge system messages only contiues system messages
+                        # Merge system messages only continues system messages
                         raise ValueError(
                             "Multiple and Not continuous system messages are not supported if model_info['multiple_system_messages'] is False"
                         )
@@ -915,7 +915,7 @@ class BaseOpenAIChatCompletionClient(ChatCompletionClient):
                     )
                 )
 
-            # Set the model from the lastest chunk.
+            # Set the model from the latest chunk.
             maybe_model = chunk.model
 
             # Empty chunks has been observed when the endpoint is under heavy load.
@@ -943,7 +943,7 @@ class BaseOpenAIChatCompletionClient(ChatCompletionClient):
             # Set the choice to the first choice in the chunk.
             choice = chunk.choices[0]
 
-            # for liteLLM chunk usage, do the following hack keeping the pervious chunk.stop_reason (if set).
+            # for liteLLM chunk usage, do the following hack keeping the previous chunk.stop_reason (if set).
             # set the stop_reason for the usage chunk to the prior stop_reason
             stop_reason = choice.finish_reason if chunk.usage is None and stop_reason is None else stop_reason
             maybe_model = chunk.model

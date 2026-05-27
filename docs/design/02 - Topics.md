@@ -45,7 +45,7 @@ These functions MUST be be free of side effects such that the evaluation can be 
 
 ### Agent instance creation
 
-If a message is received on a topic that maps to an agent that does not yet exist the runtime will instantiate an agent to fullfil the request.
+If a message is received on a topic that maps to an agent that does not yet exist the runtime will instantiate an agent to fulfil the request.
 
 ## Message types
 

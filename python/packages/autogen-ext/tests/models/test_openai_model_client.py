@@ -79,7 +79,7 @@ class MyArgs(BaseModel):
 
 
 class MockChunkDefinition(BaseModel):
-    # defining elements for diffentiating mocking chunks
+    # defining elements for differentiating mocking chunks
     chunk_choice: ChunkChoice
     usage: CompletionUsage | None
 
@@ -686,7 +686,7 @@ async def test_structured_output_using_response_format(monkeypatch: pytest.Monke
     assert response["response"] == "happy"
     assert called_args["kwargs"]["response_format"]["type"] == "json_schema"
 
-    # Test the response format can be serailized and deserialized.
+    # Test the response format can be serialized and deserialized.
     config = model_client.dump_component()
     assert config
     loaded_client = OpenAIChatCompletionClient.load_component(config)

@@ -202,7 +202,7 @@ async def test_specify_vectorizer() -> None:
     assert memory.message_history._vectorizer.dims == 384  # type: ignore[reportPrivateUsage]
     await memory.close()
 
-    # throw an error if a non-existant model name is passed
+    # throw an error if a non-existent model name is passed
     config = RedisMemoryConfig(index_name="semantic_agent", model_name="not-a-real-model")
     with pytest.raises(OSError):
         memory = RedisMemory(config=config)
@@ -460,7 +460,7 @@ async def test_markdown_memory_type(semantic_memory: RedisMemory) -> None:
 
                     Paragraphs are separated by a blank line.
 
-                    *Italics are within asteriks*, **bold text is within two asterisks**,
+                    *Italics are within asterisks*, **bold text is within two asterisks**,
                     while `monospace is within back tics`.
 
                     Itemized lists are made with indented asterisks:
@@ -567,7 +567,7 @@ async def test_sequential_memory_workflow(sequential_memory: RedisMemory) -> Non
     results = await sequential_memory.query("How do I make peanut butter sandwiches?")
     assert len(results.results) == 5
 
-    # seting 'sequential' to True in query method is redundant
+    # setting 'sequential' to True in query method is redundant
     results = await sequential_memory.query("fast sports cars", sequential=True)
     assert len(results.results) == 5
 

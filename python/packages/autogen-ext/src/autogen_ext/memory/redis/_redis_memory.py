@@ -105,7 +105,7 @@ class RedisMemory(Memory, Component[RedisMemoryConfig]):
 
 
             async def main():
-                # Initailize Redis memory
+                # Initialize Redis memory
                 redis_memory = RedisMemory(
                     config=RedisMemoryConfig(
                         redis_url="redis://localhost:6379",

@@ -60,9 +60,9 @@ public partial class FunctionExamples
     /// </summary>
     /// <param name="query">query, required</param>
     /// <param name="k">top k, optional, default value is 3</param>
-    /// <param name="thresold">thresold, optional, default value is 0.5</param>
+    /// <param name="threshold">threshold, optional, default value is 0.5</param>
     [FunctionAttribute]
-    public string[] Query(string query, int k = 3, float thresold = 0.5f)
+    public string[] Query(string query, int k = 3, float threshold = 0.5f)
     {
         return Enumerable.Repeat(query, k).ToArray();
     }

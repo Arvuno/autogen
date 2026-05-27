@@ -54,7 +54,7 @@ async def main(config: AppConfig):
 
     await ui_agent_runtime.add_subscription(
         TypeSubscription(topic_type=config.ui_agent.topic_type, agent_type=ui_agent_type.type)
-    )  # TODO: This could be a great example of using agent_id to route to sepecific element in the ui. Can replace MessageChunk.message_id
+    )  # TODO: This could be a great example of using agent_id to route to specific element in the ui. Can replace MessageChunk.message_id
 
     await ui_agent_runtime.stop_when_signal()
     Console().print("UI Agent left the chat!")

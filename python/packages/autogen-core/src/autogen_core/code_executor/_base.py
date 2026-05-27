@@ -17,7 +17,7 @@ from .._component_config import ComponentBase
 
 @dataclass
 class CodeBlock:
-    """A code block extracted fromm an agent message."""
+    """A code block extracted from an agent message."""
 
     code: str
     language: str

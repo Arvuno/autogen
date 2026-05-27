@@ -11,7 +11,7 @@
     <!-- NuGet Package Settings -->
     <Title>AutoGen.OpenAI</Title>
     <Description>
-      OpenAI Intergration for AutoGen.
+      OpenAI Integration for AutoGen.
       If your project still depends on Azure.AI.OpenAI v1, please use AutoGen.OpenAI.V1 package instead.
     </Description>
   </PropertyGroup>

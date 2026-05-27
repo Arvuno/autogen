@@ -503,7 +503,7 @@ class BaseAnthropicChatCompletionClient(ChatCompletionClient):
                     _first_system_message_idx = idx
                 elif _last_system_message_idx + 1 != idx:
                     # That case, system message is not continuous
-                    # Merge system messages only contiues system messages
+                    # Merge system messages only continues system messages
                     raise ValueError("Multiple and Not continuous system messages are not supported")
                 system_message_content += message.content + "\n"
                 _last_system_message_idx = idx

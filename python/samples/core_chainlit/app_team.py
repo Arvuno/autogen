@@ -173,7 +173,7 @@ async def pass_msg_to_ui() -> None:
             ui_resp = cl.Message("") 
             first_message = True
         else:
-            # This is a stop meesage
+            # This is a stop message
             if (stream_msg.content.content == "stop"):
                 break
             break

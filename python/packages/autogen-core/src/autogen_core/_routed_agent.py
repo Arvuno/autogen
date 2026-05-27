@@ -31,7 +31,7 @@ ReceivesT = TypeVar("ReceivesT")
 ProducesT = TypeVar("ProducesT", covariant=True)
 
 # TODO: Generic typevar bound binding U to agent type
-# Can't do because python doesnt support it
+# Can't do because python doesn't support it
 
 
 # Pyright and mypy disagree on the variance of ReceivesT. Mypy thinks it should be contravariant here.

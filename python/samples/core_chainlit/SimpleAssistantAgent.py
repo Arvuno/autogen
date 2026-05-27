@@ -82,7 +82,7 @@ class SimpleAssistantAgent(RoutedAgent):
             else:
                 raise RuntimeError(f"Invalid chunk type: {type(chunk)}")
         
-        if model_result is None:    # No final result in model client respons
+        if model_result is None:    # No final result in model client response
             raise RuntimeError("No final model result in streaming mode.")
 
         yield model_result
@@ -123,12 +123,12 @@ class SimpleAssistantAgent(RoutedAgent):
             if isinstance(chunk, CreateResult):
                 model_result = chunk
             elif isinstance(chunk, str):
-                # foward the stream tokent to the Queue
+                # forward the stream tokent to the Queue
                 await self.runtime.publish_message(StreamResult(content=chunk, source=self.id.type), topic_id=task_results_topic_id)
             else:
                 raise RuntimeError(f"Invalid chunk type: {type(chunk)}")
 
-        if model_result is None:    # No final result in model client respons
+        if model_result is None:    # No final result in model client response
             raise RuntimeError("No final model result in streaming mode.")
 
         # Add the first model create result to the session.
@@ -161,7 +161,7 @@ class SimpleAssistantAgent(RoutedAgent):
             if isinstance(chunk, CreateResult):
                 model_result2 = chunk
             elif isinstance(chunk, str):
-                # foward the stream tokent to the Queue
+                # forward the stream tokent to the Queue
                 await self.runtime.publish_message(StreamResult(content=chunk, source=self.id.type), topic_id=task_results_topic_id)
             else:
                 raise RuntimeError(f"Invalid chunk type: {type(chunk)}")
@@ -203,7 +203,7 @@ class SimpleAssistantAgent(RoutedAgent):
                 model_result = chunk
                 await self.runtime.publish_message(StreamResult(content=model_result, source=self.id.type), topic_id=task_results_topic_id)
             elif isinstance(chunk, str):
-                # foward the stream tokent to the Queue
+                # forward the stream tokent to the Queue
                 await self.runtime.publish_message(StreamResult(content=chunk, source=self.id.type), topic_id=task_results_topic_id)
             else:
                 raise RuntimeError(f"Invalid chunk type: {type(chunk)}")

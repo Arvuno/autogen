@@ -72,7 +72,7 @@ class ACADynamicSessionsCodeExecutor(CodeExecutor):
             a default working directory will be used. The default working
             directory is a temporal directory.
         functions (List[Union[FunctionWithRequirements[Any, A], Callable[..., Any]]]): A list of functions that are available to the code executor. Default is an empty list.
-        suppress_result_output bool: By default the executor will attach any result info in the execution response to the result outpu. Set this to True to prevent this.
+        suppress_result_output bool: By default the executor will attach any result info in the execution response to the result output. Set this to True to prevent this.
         session_id (str): The session id for the code execution (passed to Dynamic Sessions). If None, a new session id will be generated. Default is None. Note this value will be reset when calling `restart`
 
     .. note::

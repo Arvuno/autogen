@@ -26,7 +26,7 @@ public partial class Example07_Dynamic_GroupChat_Calculate_Fibonacci
     /// <summary>
     /// review code block
     /// </summary>
-    /// <param name="hasMultipleCodeBlocks">true if there're multipe csharp code blocks</param>
+    /// <param name="hasMultipleCodeBlocks">true if there're multiple csharp code blocks</param>
     /// <param name="isTopLevelStatement">true if the code is in top level statement</param>
     /// <param name="isDotnetCodeBlock">true if the code block is csharp code block</param>
     /// <param name="isPrintResultToConsole">true if the code block print out result to console</param>
@@ -320,7 +320,7 @@ public partial class Example07_Dynamic_GroupChat_Calculate_Fibonacci
         var taskMessage = new TextMessage(Role.User, task, from: admin.Name);
         await foreach (var message in groupChat.SendAsync([taskMessage], maxRound: 10))
         {
-            // teminate chat if message is from runner and run successfully
+            // terminate chat if message is from runner and run successfully
             if (message.From == "runner" && message.GetContent().Contains(the39thFibonacciNumber.ToString()))
             {
                 Console.WriteLine($"The 39th of fibonacci number is {the39thFibonacciNumber}");
@@ -365,7 +365,7 @@ public partial class Example07_Dynamic_GroupChat_Calculate_Fibonacci
         var taskMessage = new TextMessage(Role.User, task);
         await foreach (var message in groupChat.SendAsync([taskMessage], maxRound: 10))
         {
-            // teminate chat if message is from runner and run successfully
+            // terminate chat if message is from runner and run successfully
             if (message.From == "runner" && message.GetContent().Contains(the39thFibonacciNumber.ToString()))
             {
                 Console.WriteLine($"The 39th of fibonacci number is {the39thFibonacciNumber}");

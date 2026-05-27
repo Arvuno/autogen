@@ -43,7 +43,7 @@ internal class Streaming_Tool_Call
         var question = new TextMessage(Role.User, "What's the weather in Seattle");
 
         // In streaming function call
-        // function can only be invoked untill all the chunks are collected
+        // function can only be invoked until all the chunks are collected
         // therefore, only one ToolCallAggregateMessage chunk will be return here.
         await foreach (var message in agent.GenerateStreamingReplyAsync([question]))
         {

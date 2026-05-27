@@ -12,9 +12,9 @@
         "type": "integer",
         "description": "top k, optional, default value is 3"
       },
-      "thresold": {
+      "threshold": {
         "type": "number",
-        "description": "thresold, optional, default value is 0.5"
+        "description": "threshold, optional, default value is 0.5"
       }
     },
     "required": [

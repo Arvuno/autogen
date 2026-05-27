@@ -221,7 +221,7 @@ public class RunContextStackTests
         await initializeAgainAction.Should().NotThrowAsync("Initialize should not throw an exception");
 
         initializeErrors.Should().Be(1, "There should be one initialization error");
-        deinitializeErrors.Should().Be(0, "There should not have been an overriden invocation of a deinitialize error.");
+        deinitializeErrors.Should().Be(0, "There should not have been an overridden invocation of a deinitialize error.");
     }
 
     [Fact]

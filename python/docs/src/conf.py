@@ -54,7 +54,7 @@ templates_path = ["_templates"]
 
 autoclass_content = "class"
 
-# TODO: incldue all notebooks excluding those requiring remote API access.
+# TODO: include all notebooks excluding those requiring remote API access.
 nb_execution_mode = "off"
 
 # Guides and tutorials must succeed.

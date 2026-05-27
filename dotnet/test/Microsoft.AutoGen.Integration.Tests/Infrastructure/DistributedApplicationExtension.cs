@@ -58,7 +58,7 @@ public static partial class DistributedApplicationExtensions
         where TBuilder : IDistributedApplicationTestingBuilder
     {
         // Named volumes that aren't shared across resources should be replaced with anonymous volumes.
-        // Named volumes shared by mulitple resources need to have their name randomized but kept shared across those resources.
+        // Named volumes shared by multiple resources need to have their name randomized but kept shared across those resources.
 
         // Find all shared volumes and make a map of their original name to a new randomized name
         var allResourceNamedVolumes = builder.Resources.SelectMany(r => r.Annotations

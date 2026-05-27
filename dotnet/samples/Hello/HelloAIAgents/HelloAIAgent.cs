@@ -15,7 +15,7 @@ public class HelloAIAgent(
         hostApplicationLifetime),
         IHandle<NewMessageReceived>
 {
-    // This Handle supercedes the one in the base class
+    // This Handle supersedes the one in the base class
     public new async Task Handle(NewMessageReceived item, CancellationToken cancellationToken = default)
     {
         var prompt = "Please write a limerick greeting someone with the name " + item.Message;

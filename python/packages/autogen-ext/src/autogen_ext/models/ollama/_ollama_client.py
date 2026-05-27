@@ -904,7 +904,7 @@ class OllamaChatCompletionClient(BaseOllamaChatCompletionClient, Component[BaseO
         model_info (optional, ModelInfo): The capabilities of the model. **Required if the model is not listed in the ollama model info.**
 
     Note:
-        Only models with 200k+ downloads (as of Jan 21, 2025), + phi4, deepseek-r1 have pre-defined model infos. See `this file <https://github.com/microsoft/autogen/blob/main/python/packages/autogen-ext/src/autogen_ext/models/ollama/_model_info.py>`__ for the full list. An entry for one model encompases all parameter variants of that model.
+        Only models with 200k+ downloads (as of Jan 21, 2025), + phi4, deepseek-r1 have pre-defined model infos. See `this file <https://github.com/microsoft/autogen/blob/main/python/packages/autogen-ext/src/autogen_ext/models/ollama/_model_info.py>`__ for the full list. An entry for one model encompasses all parameter variants of that model.
 
     To use this client, you must install the `ollama` extension:
 

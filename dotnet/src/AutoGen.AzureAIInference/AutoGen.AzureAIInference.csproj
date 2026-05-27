@@ -10,7 +10,7 @@
     <!-- NuGet Package Settings -->
     <Title>AutoGen.AzureAIInference</Title>
     <Description>
-      Azure AI Inference Intergration for AutoGen.
+      Azure AI Inference Integration for AutoGen.
     </Description>
   </PropertyGroup>
 

@@ -82,8 +82,8 @@ async def start_chat() -> None:
         reflect_on_tool_use=True,  # Reflect on tool use.
     ))
 
-    # Register the Closure Agent to process streaming chunks from agents by exeucting the output_result 
-    # function, whihc sends the stream response to the output queue 
+    # Register the Closure Agent to process streaming chunks from agents by executing the output_result 
+    # function, which sends the stream response to the output queue 
     await ClosureAgent.register_closure(
         runtime, CLOSURE_AGENT_TYPE, output_result, subscriptions=lambda:[TypeSubscription(topic_type=TASK_RESULTS_TOPIC_TYPE, agent_type=CLOSURE_AGENT_TYPE)] 
     )

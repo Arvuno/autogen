@@ -23,7 +23,7 @@ public partial class WeatherFunction
     public async Task<string> GetWeather(string location, string unit)
     {
         // dummy implementation
-        return $"The weather in {location} is currently sunny with a tempature of {unit} (s)";
+        return $"The weather in {location} is currently sunny with a temperature of {unit} (s)";
     }
 }
 #endregion

@@ -279,7 +279,7 @@ class SimpleMcpServer:
                 max_tokens=100,
                 temperature=0.6,
                 stop_sequences=["\n\n"],
-                system_prompt="You are a createive poet.",
+                system_prompt="You are a creative poet.",
             )
 
             if (

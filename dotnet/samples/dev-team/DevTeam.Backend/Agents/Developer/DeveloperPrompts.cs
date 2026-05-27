@@ -15,7 +15,7 @@ public static class DeveloperSkills
         """;
 
     public const string Improve = """
-        You are a Developer for an application. Your job is to imrove the code that you are given in the input below. 
+        You are a Developer for an application. Your job is to improve the code that you are given in the input below. 
         Please output a new version of code that fixes any problems with this version. 
         If there is an error message in the input you should fix that error in the code. 
         Wrap the code output up in a bash script that creates the necessary files by overwriting any previous files. 

@@ -495,7 +495,7 @@ $functions"""
         """(Experimental) Stop the code executor.
 
         Stops the local code executor and performs the cleanup of the temporary working directory (if it was created).
-        The executor's internal state is markes as no longer started.
+        The executor's internal state is marked as no longer started.
         """
         if self._temp_dir is not None:
             self._temp_dir.cleanup()

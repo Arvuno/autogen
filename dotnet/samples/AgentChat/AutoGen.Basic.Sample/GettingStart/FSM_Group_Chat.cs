@@ -175,7 +175,7 @@ public class FSM_Group_Chat
             workflow: workflow);
         #endregion Group_Chat
 
-        var initialMessage = await assistantAgent.SendAsync("Generate a greeting meesage for user and start the conversation by asking what's their name.");
+        var initialMessage = await assistantAgent.SendAsync("Generate a greeting message for user and start the conversation by asking what's their name.");
 
         var chatHistory = new List<IMessage> { initialMessage };
         await foreach (var msg in groupChat.SendAsync(chatHistory, maxRound: 30))

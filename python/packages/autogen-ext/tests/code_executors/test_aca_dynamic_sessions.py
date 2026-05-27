@@ -95,7 +95,7 @@ async def test_execute_code_create_image() -> None:
     )
 
     # Test code block that creates an image.
-    # This code cuases the session call to return a result with the base64 encoded output
+    # This code causes the session call to return a result with the base64 encoded output
     # By default, this is appended to the output
     # This test verifies that suppress_result_output prevents this from happening
     code_blocks = [

@@ -19,7 +19,7 @@ Execute the sample with this command:
     python eval_retrieval.py configs/retrieval.yaml
 
 This sample shows how an app can access the `MemoryController` directly
-to retrieve previously stored task-insight pairs as potentially useful examplars when solving some new task.
+to retrieve previously stored task-insight pairs as potentially useful exemplars when solving some new task.
 A task is any text instruction that the app may give to an agent.
 An insight is any text (like a hint, advice, a demonstration or plan) that might help the agent perform such tasks.
 """

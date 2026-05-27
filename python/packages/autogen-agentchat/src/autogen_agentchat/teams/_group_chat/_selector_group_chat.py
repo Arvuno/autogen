@@ -201,7 +201,7 @@ class SelectorGroupChatManager(BaseGroupChatManager):
         assert len(participants) > 0
 
         # Construct agent roles.
-        # Each agent sould appear on a single line.
+        # Each agent could appear on a single line.
         roles = ""
         for topic_type, description in zip(self._participant_names, self._participant_descriptions, strict=True):
             roles += re.sub(r"\s+", " ", f"{topic_type}: {description}").strip() + "\n"

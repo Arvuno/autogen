@@ -215,7 +215,7 @@ public class MistralChatMessageConnector : IStreamingMiddleware, IMiddleware
         }
         else if (textMessage.From == agent.Name)
         {
-            // if this message is from agent iteself, then its role should be assistant
+            // if this message is from agent itself, then its role should be assistant
             messages = [new ChatMessage(ChatMessage.RoleEnum.Assistant, textMessage.Content)];
         }
         else if (textMessage.From is null)
