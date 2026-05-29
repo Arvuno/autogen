@@ -239,3 +239,5 @@ or trademarks, whether by implication, estoppel, or otherwise.
     ↑ Back to Top ↑
   </a>
 </p>
+
+- Documentation updated for clarity
