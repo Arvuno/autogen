@@ -134,3 +134,6 @@ Now that 0.4.0 is out, we should ensure the docs between versions are easy to na
 ```
 
 See [here](https://pydata-sphinx-theme.readthedocs.io/en/stable/examples/kitchen-sink/admonitions.html#versionadded) for how they are rendered.
+
+## Contributors
+- Documentation improvements (2026)
